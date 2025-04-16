@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <id>com.icube.theme</id>
+    <name>icube Themes</name>
+    <vendor>icube</vendor>
+    <description>The icube light and dark themes for JetBrains IDEs</description>
+    <version>1.0.0</version>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="com.icube.theme.dark" path="/themes/dark_plus.theme.json"/>
+        <themeProvider id="com.icube.theme.deep_blue" path="/themes/dark_blue.theme.json"/>
+        <themeProvider id="com.icube.theme.light" path="/themes/light.theme.json"/>
+    </extensions>
+</idea-plugin> 

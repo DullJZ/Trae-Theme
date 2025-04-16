@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '1.16.0'
+}
+
+group 'com.icube.theme'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // No dependencies needed for a theme plugin
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version = '2022.3'  // Target IntelliJ IDEA version
+    updateSinceUntilBuild = false  // Support all IDE versions
+}
+
+patchPluginXml {
+    sinceBuild = '193'  // Minimum IDE version support (2019.3+)
+    untilBuild = ''     // No maximum version limitation
+    pluginDescription = """
+        This plugin provides light and dark themes for JetBrains IDEs ported from VS Code icube themes.
+        
+        Features:
+        - Dark+ theme: A modern dark theme with good contrast
+        - Deep Blue theme: A dark theme with blue accents 
+        - Light theme: A clean and bright theme
+    """
+    changeNotes = """
+        Initial release:
+        - Dark+, Deep Blue, and Light themes
+    """
+}
+
+buildSearchableOptions {
+    enabled = false  // No searchable options needed for themes
+}
+
+// Package plugin into a distributable ZIP file
+tasks.withType(JavaCompile) {
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
+    options.encoding = 'UTF-8'
+} 

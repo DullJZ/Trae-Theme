@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/
+
+# Intellij IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# Mac OS
+.DS_Store
+
+# JetBrains
+*.zip 
