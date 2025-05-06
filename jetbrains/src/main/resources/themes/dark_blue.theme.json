@@ -85,14 +85,34 @@
     "Menu": {
       "borderColor": "#AABCF214",
       "foreground": "#DADDE5",
-      "background": "#343B4D",
+      "background": "#252A38",
       "selectionForeground": "#FFFFFF",
       "selectionBackground": "#AABCF226",
       "separatorColor": "#AABCF214"
     },
     "MenuItem": {
       "foreground": "#DADDE5",
-      "acceleratorForeground": "#9599A6"
+      "acceleratorForeground": "#9599A6",
+      "background": "#252A38"
+    },
+    "PopupMenu": {
+      "background": "#252A38",
+      "borderColor": "#AABCF214",
+      "borderInsets": "1,1,1,1"
+    },
+    "PopupMenu.translucentBackground": "#252A38",
+    "MenuBar": {
+      "background": "#252A38",
+      "borderColor": "#AABCF214"
+    },
+    "ActionMenu": {
+      "background": "#252A38"
+    },
+    "ActionMenuItem": {
+      "background": "#252A38"
+    },
+    "Separator": {
+      "separatorColor": "#AABCF214"
     },
     "ProgressBar": {
       "trackColor": "#343B4D",
